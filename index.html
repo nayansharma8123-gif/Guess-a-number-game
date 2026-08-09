@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game-container">
+
+        <section class="game-card">
+
+            <div class="game-icon">🎯</div>
+
+            <h1>Guess the Number</h1>
+
+            <p class="subtitle">
+                I'm thinking of a number. Can you guess it?
+            </p>
+
+            <div class="difficulty">
+                <label for="difficulty">Difficulty</label>
+
+                <select id="difficulty">
+                    <option value="easy">Easy — 1 to 50</option>
+                    <option value="medium" selected>Medium — 1 to 100</option>
+                    <option value="hard">Hard — 1 to 500</option>
+                </select>
+            </div>
+
+            <div class="range-text" id="rangeText">
+                Guess a number between 1 and 100
+            </div>
+
+            <div class="input-area">
+
+                <input
+                    type="number"
+                    id="guessInput"
+                    placeholder="Enter your guess"
+                    min="1"
+                >
+
+                <button id="guessBtn">Guess</button>
+
+            </div>
+
+            <p id="message" class="message">
+                Make your first guess!
+            </p>
+
+            <div class="hint-box">
+                💡 <span id="hint">You'll get a hint after every guess.</span>
+            </div>
+
+            <div class="stats">
+
+                <div class="stat">
+                    <span class="stat-label">Attempts</span>
+                    <strong id="attempts">0</strong>
+                </div>
+
+                <div class="stat">
+                    <span class="stat-label">Score</span>
+                    <strong id="score">100</strong>
+                </div>
+
+                <div class="stat">
+                    <span class="stat-label">Best Score</span>
+                    <strong id="bestScore">—</strong>
+                </div>
+
+            </div>
+
+            <button id="restartBtn" class="restart-btn">
+                🔄 New Game
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
