@@ -59,9 +59,7 @@ For every incorrect guess:
 
 When you guess correctly, the game ends and your score is compared with your saved best score.
 
-📸 Screenshots
-
-Add screenshots of your game here after completing the project.
+This is a simple game.
 
 🔮 Future Improvements
 
